@@ -1,6 +1,7 @@
 ## URI(Uniform Resource Idenrifier)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/934968c3-f6ae-46ad-8423-aec44f8c9ba4/0bd98650-edff-4b15-9355-6ed065303a31/Untitled.png)
+![image](https://github.com/jellyjw/HTTP/assets/104891203/579128c9-84e4-46b2-a44d-7d13c316f720)
+
 
 URI는 로케이터(Locator), 이름(Name) 또는 둘 다 추가로 분류될 수 있는, URL과 URN을 포함하는 개념이다.
 
@@ -10,7 +11,8 @@ URI는 로케이터(Locator), 이름(Name) 또는 둘 다 추가로 분류될 �
 - Resource : 자원, URI로 식별할 수 있는 모든 것(제한 없음, ex: html 파일 뿐만 아니라 실시간 교통정보 등)
 - Identifier : 다른 항목과 구분하는데 필요한 정보
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/934968c3-f6ae-46ad-8423-aec44f8c9ba4/47c367fc-5348-4fab-8491-7cc6b66ff99e/Untitled.png)
+![image](https://github.com/jellyjw/HTTP/assets/104891203/a32d99d5-7917-4c3d-a02c-4b18e1ab964a)
+
 
 ### URL(Uniform Resource Locator)
 
@@ -64,20 +66,22 @@ https:www.google.com:443/search?q=hello&hl=ko
 1. 먼저 DNS 서버에서 host(`[www.google.com](http://www.google.com)`)를 조회해서 IP를 받아온다.
 2. HTTP 요청 메세지를 생성한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/934968c3-f6ae-46ad-8423-aec44f8c9ba4/bd21726c-c5fe-428d-8b01-493c5b2919e0/Untitled.png)
+![image](https://github.com/jellyjw/HTTP/assets/104891203/9d96f5c6-e55f-4817-86ca-9d47f383b54f)
 
-1. HTTP 메시지를 전송한다.
+
+3. HTTP 메시지를 전송한다.
    1. 웹 브라우저가 HTTP 메시지 생성
    2. SOCKET 라이브러리를 통해 전달(TCP/IP 연결, 데이터 전달)
    3. TCP/IP 패킷 생성, HTTP 메시지 포함
-2. 패킷 생성
+4. 패킷 생성
    1. 출발지 IP, PORT
    2. 목적지 IP, PORT
    3. 전송 데이터 등을 포함
-3. 브라우저에서 구글 서버로 요청 패킷 전달
-4. 구글 서버에서 요청 패킷의 메세지를 해석하고, 응답 메세지를 생성한다.
+5. 브라우저에서 구글 서버로 요청 패킷 전달
+6. 구글 서버에서 요청 패킷의 메세지를 해석하고, 응답 메세지를 생성한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/934968c3-f6ae-46ad-8423-aec44f8c9ba4/82c82e50-029c-4cf5-a34f-f3676c6e8d30/Untitled.png)
+![image](https://github.com/jellyjw/HTTP/assets/104891203/52afe122-0116-474e-bed6-4f4f21853f20)
 
-1. 구글 서버에서 응답 패킷을 웹 브라우저에 전달한다.
-2. 브라우저에서 응답을 받고 HTTP 메세지(html 파일)를 브라우저에 렌더링한다.
+
+7. 구글 서버에서 응답 패킷을 웹 브라우저에 전달한다.
+8. 브라우저에서 응답을 받고 HTTP 메세지(html 파일)를 브라우저에 렌더링한다.
