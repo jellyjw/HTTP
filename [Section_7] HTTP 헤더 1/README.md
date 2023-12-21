@@ -11,7 +11,8 @@
 
 `cache-control` 값의 `max-age` 는 이 시간동안 캐시가 유효하다는 뜻이다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/934968c3-f6ae-46ad-8423-aec44f8c9ba4/5be25bc0-a7af-4bc1-a272-0adf68885ef1/Untitled.png)
+![image](https://github.com/jellyjw/HTTP/assets/104891203/72451a0c-a058-417f-aec2-594dc2505c3f)
+
 
 두번째 요청시에 무조건 캐시에서 조회하고, 있으면 캐시에서 가져오게 된다.
 
